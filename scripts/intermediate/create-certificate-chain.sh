@@ -1,4 +1,7 @@
-cat intermediate/certs/intermediate.cert.pem \
-  certs/ca.cert.pem > intermediate/certs/ca-chain.cert.pem
+cert_auth_home="$HOME/git/certificate-authority"
+root_ca_home="$cert_auth_home/root/ca"
 
-chmod 444 intermediate/certs/ca-chain.cert.pem
+cat $root_ca_home/intermediate/certs/intermediate.cert.pem \
+  $root_ca_home/certs/ca.cert.pem > $root_ca_home/intermediate/certs/ca-chain.cert.pem
+
+chmod 444 $root_ca_home/intermediate/certs/ca-chain.cert.pem
