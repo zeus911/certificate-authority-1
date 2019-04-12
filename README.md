@@ -1,4 +1,4 @@
-# certificate-authority
+# Certificate Authority
 
 Assumption(s):
 - Codebases checking out this repo, place it at $HOME/git/certificate-authority.  
