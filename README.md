@@ -3,7 +3,7 @@
 ## Assumption(s):
 - Codebases checking out this repo, place it at $HOME/git/certificate-authority.  
 
-Root Certificate Authority (RCA) root certificate creation
+## Root Certificate Authority (RCA) root certificate creation
 - Individual designated as the RCA creates their Private Key (PK)  
   `./scripts/root/ca/create-root-key.sh`
 - Individual designated as the RCA creates their root certificate   
@@ -11,7 +11,7 @@ Root Certificate Authority (RCA) root certificate creation
 - Individual designated as the RCA verifies the new root certificate  
   `./scripts/root/ca/verify-root-certificate.sh`
   
-Intermediate Certificate Authority (ICA) intermediate certificate creation
+## Intermediate Certificate Authority (ICA) intermediate certificate creation
 - Individual designated as the ICA creates their PK  
   `./scripts/root/ca/intermediate/create-intermediate-key.sh`
 - Individual designated as the ICA creates their Certificate Signing Request (CSR)  
@@ -25,7 +25,7 @@ Intermediate Certificate Authority (ICA) intermediate certificate creation
 - The ICA verifies the Chain of Trust  
   `./scripts/root/ca/intermediate/verify-chain-of-trust.sh`
   
-User Certificate (UC) Creation
+## User Certificate (UC) Creation
 - User creates Private Key (PK) and CSR     
   `./scripts/usr_cert/usr-creates-key-and-csr.sh`   
 - ICA reviews and approves the user-based CSR then create the UC    
@@ -33,7 +33,7 @@ User Certificate (UC) Creation
 - ICA verifies the UC  
   `./scripts/usr_cert/ca-verifies-usr-certificate.sh`
 
-Server Certificate Creation
+## Server Certificate Creation
 - User creates PK    
   `./scripts/server_cert/create-key.sh`
 - User creates server-based CSR  
@@ -45,7 +45,7 @@ Server Certificate Creation
 - ICA verifies the chain of trust  
   `./scripts/server_cert/verify-chain-of-trust.sh`
   
-Intermediate Certificate Authority (ICA) intermediate certificate revoking
+## Intermediate Certificate Authority (ICA) intermediate certificate revoking
 - ICA revokes certificate  
   `./scripts/usr_cert/ca-revokes-usr-certificate.sh`  
 - ICA recreates the Certificate Revocation List (CRL)  
