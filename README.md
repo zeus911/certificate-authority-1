@@ -26,29 +26,29 @@
   `./scripts/root/ca/intermediate/verify-chain-of-trust.sh`
   
 ## User Certificate (UC) Creation
-- User creates Private Key (PK) and CSR     
+1. User creates Private Key (PK) and CSR     
   `./scripts/usr_cert/usr-creates-key-and-csr.sh`   
-- ICA reviews and approves the user-based CSR then create the UC    
+1. ICA reviews and approves the user-based CSR then create the UC    
   `./scripts/usr_cert/ca-creates-usr-certificate.sh`
-- ICA verifies the UC  
+1. ICA verifies the UC  
   `./scripts/usr_cert/ca-verifies-usr-certificate.sh`
 
 ## Server Certificate Creation
-- User creates PK    
+1. User creates PK    
   `./scripts/server_cert/create-key.sh`
-- User creates server-based CSR  
+1. User creates server-based CSR  
   `./scripts/server_cert/create-csr.sh`
-- ICA reviews and approves the server-based CSR then create the Server Certificate (SC)  
+1. ICA reviews and approves the server-based CSR then create the Server Certificate (SC)  
   `./scripts/server_cert/create-certificate.sh`
-- ICA verifies the certificate details  
+1. ICA verifies the certificate details  
   `./scripts/server_cert/verify-certificate-details.sh`  
-- ICA verifies the chain of trust  
+1. ICA verifies the chain of trust  
   `./scripts/server_cert/verify-chain-of-trust.sh`
   
 ## Intermediate Certificate Authority (ICA) intermediate certificate revoking
-- ICA revokes certificate  
+1. ICA revokes certificate  
   `./scripts/usr_cert/ca-revokes-usr-certificate.sh`  
-- ICA recreates the Certificate Revocation List (CRL)  
+1. ICA recreates the Certificate Revocation List (CRL)  
   `./scripts/crl/create-crl.sh`
-- ICA verifies the new CRL List  
+1. ICA verifies the new CRL List  
   `./scripts/crl/check-crl-details.sh`
