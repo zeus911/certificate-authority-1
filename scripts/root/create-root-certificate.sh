@@ -7,3 +7,5 @@ openssl req -config $root_ca_home/openssl.cnf \
   -out $root_ca_home/certs/ca.cert.pem
 
 chmod 444 $root_ca_home/certs/ca.cert.pem
+
+echo "New root certificate is located at $root_ca_home/certs/ca.cert.pem"

@@ -7,3 +7,5 @@ openssl ca -config $root_ca_home/openssl.cnf -extensions v3_intermediate_ca \
   -out $root_ca_home/intermediate/certs/intermediate.cert.pem
 
 chmod 444 $root_ca_home/intermediate/certs/intermediate.cert.pem
+
+echo "New intermediate certificate located at $root_ca_home/intermediate/certs/intermediate.cert.pem"
