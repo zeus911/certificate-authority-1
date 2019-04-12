@@ -5,24 +5,26 @@ Assumption(s):
 
 Root Certificate Authority (RCA) root certificate creation
 - Individual designated as the RCA creates their Private Key (PK)  
-
+  ``
 - Individual designated as the RCA creates their root certificate   
-
+  ``
 - Individual designated as the RCA verifies the new root certificate  
-
+  ``
+  
 Intermediate Certificate Authority (ICA) intermediate certificate creation
 - Individual designated as the ICA creates their PK  
-
+  ``
 - Individual designated as the ICA creates their Certificate Signing Request (CSR)  
-
+  ``
 - The RCA reviews the ICA CSR and creates their intermediate certificate   
-
+  ``
 - The ICA verifies the new Intermediate Certificate (IC)  
-
+  ``
 - The ICA creates the certificate chain  
-
+  ``
 - The ICA verifies the Chain of Trust  
-
+  ``
+  
 User Certificate (UC) Creation
 - User creates Private Key (PK)    
   ``
