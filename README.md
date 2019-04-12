@@ -1,6 +1,6 @@
 # Certificate Authority
 
-Assumption(s):
+## Assumption(s):
 - Codebases checking out this repo, place it at $HOME/git/certificate-authority.  
 
 Root Certificate Authority (RCA) root certificate creation
@@ -50,5 +50,5 @@ Intermediate Certificate Authority (ICA) intermediate certificate revoking
   `./scripts/usr_cert/ca-revokes-usr-certificate.sh`  
 - ICA recreates the Certificate Revocation List (CRL)  
   `./scripts/crl/create-crl.sh`
-- ICS verifies the new CRL List  
+- ICA verifies the new CRL List  
   `./scripts/crl/check-crl-details.sh`
