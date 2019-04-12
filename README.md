@@ -8,10 +8,10 @@ Root Certificate Authority (RCA) root certificate creation
 - Individual designated as the RCA creates their root certificate 
 - Individual designated as the RCA verifies the new root certificate
 
-Intermediate Certificate Authority (ICA) Creation
-- Individual designated as the ICA creates their Private Key (PK)
-- Individual designated as the ICA creates thier Certificate Signing Request (CSR)
-- The RCA reviews ICA CSR and creates their intermediate certificate 
+Intermediate Certificate Authority (ICA) intermediate certificate creation
+- Individual designated as the ICA creates their PK
+- Individual designated as the ICA creates their Certificate Signing Request (CSR)
+- The RCA reviews the ICA CSR and creates their intermediate certificate 
 - The Individual designated as the ICA verifies the new intermediate certificate
 
 User Certificate (UC) Creation
