@@ -26,14 +26,14 @@ Intermediate Certificate Authority (ICA) intermediate certificate creation
   `./scripts/root/ca/intermediate/verify-chain-of-trust.sh`
   
 User Certificate (UC) Creation
-- User creates Private Key (PK) and Certificate Signing Request (CSR)     
+- User creates Private Key (PK) and CSR     
   `./scripts/usr_cert/usr-creates-key-and-csr.sh`   
 - ICA reviews and approves the user-based CSR then create the UC    
   `./scripts/usr_cert/ca-creates-usr-certificate.sh`
 - ICA verifies the UC  
   `./scripts/usr_cert/ca-verifies-usr-certificate.sh`
 
-Server Certificate
+Server Certificate Creation
 - User creates PK    
   `./scripts/server_cert/create-key.sh`
 - User creates server-based CSR  
@@ -46,6 +46,9 @@ Server Certificate
   `./scripts/server_cert/verify-chain-of-trust.sh`
   
 Intermediate Certificate Authority (ICA) intermediate certificate revoking
-- ICA revokes certificate
-  `./scripts/usr_cert/ca-revokes-usr-certificate.sh`
-  
+- ICA revokes certificate  
+  `./scripts/usr_cert/ca-revokes-usr-certificate.sh`  
+- ICA recreates the Certificate Revocation List (CRL)  
+  `./scripts/crl/create-crl.sh`
+- ICS verifies the new CRL List  
+  `./scripts/crl/check-crl-details.sh`
