@@ -1,7 +1,7 @@
 # Certificate Authority
 
 ## Assumption(s):
-- Codebases checking out this repo, place it at $HOME/git/certificate-authority.  
+- The repository is checked out to $HOME/git/certificate-authority.  
 
 ## Root Certificate Authority (RCA) root certificate creation
 1. Individual designated as the RCA creates their Private Key (PK)  
