@@ -78,12 +78,12 @@ commonName                      = Common Name
 emailAddress                    = Email Address
 
 # Optionally, specify some defaults.
-countryName_default             = GB
-stateOrProvinceName_default     = England
-localityName_default            =
-0.organizationName_default      = Alice Ltd
+countryName_default             = US
+stateOrProvinceName_default     = Maryland
+localityName_default            = Germantown
+0.organizationName_default      = 
 organizationalUnitName_default  =
-emailAddress_default            =
+emailAddress_default            = 
 
 [ v3_ca ]
 # Extensions for a typical CA (`man x509v3_config`).

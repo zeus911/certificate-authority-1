@@ -15,8 +15,8 @@
 1. Individual designated as the ICA creates their PK.  Executing the following script will result in a new intermediate private key at root/ca/intermediate/private/intermediate.key.pem.  
   `./scripts/intermediate/create-intermediate-key.sh`
 1. Individual designated as the ICA creates their Certificate Signing Request (CSR).  Executing the following script will result in a new intermediate CSR at root/ca/intermediate/csr/intermediate.csr.pem.  
-  `./scripts/intermediate/create-intermedaite-csr.sh`
-1. The RCA reviews the ICA CSR and creates their intermediate certificate.  If the below command fails, you may have to `chmod 700 root/ca/private/ca.key.pem`   
+  `./scripts/intermediate/create-intermediate-csr.sh`
+1. The RCA reviews the ICA CSR and creates their intermediate certificate.   
   `./scripts/intermediate/create-intermediate-certificate.sh`
 1. The ICA verifies the new Intermediate Certificate (IC)  
   `./scripts/intermediate/verify-intermediate-certificate-details.sh`
