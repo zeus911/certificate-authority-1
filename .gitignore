@@ -1,1 +1,3 @@
 
+root/ca/private/ca.key.pem
+root/ca/certs/ca.cert.pem

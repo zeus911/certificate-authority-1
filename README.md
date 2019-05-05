@@ -4,12 +4,12 @@
 - The repository is checked out to $HOME/git/certificate-authority.  
 
 ## Root Certificate Authority (RCA) root certificate creation
-1. Individual designated as the RCA creates their Private Key (PK)  
-  `./scripts/root/ca/create-root-key.sh`
-1. Individual designated as the RCA creates their root certificate   
-  `./scripts/root/ca/create-root-certificate.sh`
-1. Individual designated as the RCA verifies the new root certificate  
-  `./scripts/root/ca/verify-root-certificate.sh`
+1. Individual designated as the RCA creates their Private Key (PK).  Executing the following script will result in a new private key at root/ca/private/ca.key.pem.  
+  `./scripts/root/create-root-key.sh`
+1. Individual designated as the RCA creates their root certificate.  Executing the following script will result in a new root certificate at root/ca/certs/ca.cert.pem.   
+  `./scripts/root/create-root-certificate.sh`
+1. Individual designated as the RCA verifies the new root certificate.  Executing the following script will not create any files, it just displays details on the root certificate that was created in the previous command.  
+  `./scripts/root/verify-root-certificate.sh`
   
 ## Intermediate Certificate Authority (ICA) intermediate certificate creation
 1. Individual designated as the ICA creates their PK  
