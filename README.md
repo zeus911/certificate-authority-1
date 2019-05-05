@@ -13,17 +13,17 @@
   
 ## Intermediate Certificate Authority (ICA) intermediate certificate creation
 1. Individual designated as the ICA creates their PK  
-  `./scripts/root/ca/intermediate/create-intermediate-key.sh`
+  `./scripts/intermediate/create-intermediate-key.sh`
 1. Individual designated as the ICA creates their Certificate Signing Request (CSR)  
-  `./scripts/root/ca/intermediate/create-intermedaite-csr.sh`
+  `./scripts/intermediate/create-intermedaite-csr.sh`
 1. The RCA reviews the ICA CSR and creates their intermediate certificate   
-  `./scripts/root/ca/intermediate/create-intermediate-certificate.sh`
+  `./scripts/intermediate/create-intermediate-certificate.sh`
 1. The ICA verifies the new Intermediate Certificate (IC)  
-  `./scripts/root/ca/intermediate/verify-intermediate-certificate-details.sh`
+  `./scripts/intermediate/verify-intermediate-certificate-details.sh`
 1. The ICA creates the certificate chain  
-  `./scripts/root/ca/intermediate/create-certificate-chain.sh`
+  `./scripts/intermediate/create-certificate-chain.sh`
 1. The ICA verifies the Chain of Trust  
-  `./scripts/root/ca/intermediate/verify-chain-of-trust.sh`
+  `./scripts/intermediate/verify-chain-of-trust.sh`
   
 ## User Certificate (UC) Creation
 1. User creates Private Key (PK) and CSR     
