@@ -1,3 +1,5 @@
 
 root/ca/private/ca.key.pem
 root/ca/certs/ca.cert.pem
+root/ca/intermediate/private/intermediate.key.pem
+root/ca/intermediate/csr/intermediate.csr.pem

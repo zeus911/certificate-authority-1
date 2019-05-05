@@ -4,7 +4,7 @@
 - The repository is checked out to $HOME/git/certificate-authority.  
 
 ## Root Certificate Authority (RCA) root certificate creation
-1. Individual designated as the RCA creates their Private Key (PK).  Executing the following script will result in a new private key at root/ca/private/ca.key.pem.  
+1. Individual designated as the RCA creates their Private Key (PK).  Executing the following script will result in a new root private key at root/ca/private/ca.key.pem.  
   `./scripts/root/create-root-key.sh`
 1. Individual designated as the RCA creates their root certificate.  Executing the following script will result in a new root certificate at root/ca/certs/ca.cert.pem.   
   `./scripts/root/create-root-certificate.sh`
@@ -12,11 +12,11 @@
   `./scripts/root/verify-root-certificate.sh`
   
 ## Intermediate Certificate Authority (ICA) intermediate certificate creation
-1. Individual designated as the ICA creates their PK  
+1. Individual designated as the ICA creates their PK.  Executing the following script will result in a new intermediate private key at root/ca/intermediate/private/intermediate.key.pem.  
   `./scripts/intermediate/create-intermediate-key.sh`
-1. Individual designated as the ICA creates their Certificate Signing Request (CSR)  
+1. Individual designated as the ICA creates their Certificate Signing Request (CSR).  Executing the following script will result in a new intermediate CSR at root/ca/intermediate/csr/intermediate.csr.pem.  
   `./scripts/intermediate/create-intermedaite-csr.sh`
-1. The RCA reviews the ICA CSR and creates their intermediate certificate   
+1. The RCA reviews the ICA CSR and creates their intermediate certificate.  If the below command fails, you may have to `chmod 700 root/ca/private/ca.key.pem`   
   `./scripts/intermediate/create-intermediate-certificate.sh`
 1. The ICA verifies the new Intermediate Certificate (IC)  
   `./scripts/intermediate/verify-intermediate-certificate-details.sh`
