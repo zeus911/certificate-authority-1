@@ -7,7 +7,7 @@ default_ca = CA_default
 
 [ CA_default ]
 # Directory and file locations.
-dir               = root/ca
+dir               = ./root/ca
 certs             = $dir/certs
 crl_dir           = $dir/crl
 new_certs_dir     = $dir/newcerts
@@ -79,11 +79,11 @@ emailAddress                    = Email Address
 
 # Optionally, specify some defaults.
 countryName_default             = US
-stateOrProvinceName_default     = 
-localityName_default            = 
-0.organizationName_default      = 
-organizationalUnitName_default  =
-emailAddress_default            =
+stateOrProvinceName_default     = Maryland
+localityName_default            = Germantown
+0.organizationName_default      = wesleygibbs
+organizationalUnitName_default  = feared.io
+emailAddress_default            = wesley.d.gibbs@me.com
 
 [ v3_ca ]
 # Extensions for a typical CA (`man x509v3_config`).
